@@ -1,7 +1,7 @@
 
 <form *ngIf="formPeople" [formGroup]="formPeople" (keydown.enter)="addPerson()">
     <div>
-    <input type="text" formControlName="name"></div>
+    <input type="text" placeholder="Nome da nova pessoa" formControlName="name"></div>
     <button type="button" id="addPeople" (click)="addPerson()"> Adicionar <br> Pessoa</button>
     <button type="button" id="removePeople" (click)="removePerson()"> Remover Última Pessoa</button>
 

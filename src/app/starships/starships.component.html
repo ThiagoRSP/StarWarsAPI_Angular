@@ -1,5 +1,15 @@
 
 
+<form *ngIf="formStarships" [formGroup]="formStarships" (keydown.enter)="addStarship()">
+  <div>
+  <input type="text" placeholder="Nome da nova nave" formControlName="name">
+  <input type="text" placeholder="Quantidade de tripulantes da nova nave" formControlName="crew"></div>
+  <div><button type="button" id="addStarship" (click)="addStarship()"> Adicionar <br> Nave</button></div>
+  <button type="button" id="removeStarship" (click)="removeStarship()"> Remover Última Nave</button>
+
+
+</form>
+
 <table>
     <tr>
       <th>Nome</th>

@@ -20,15 +20,16 @@ form{
     input, button{
     font-size: 25px;
     width: 190px;
+    border-color: #71B280;
     }
 
         #addPeople{
-            background-color: #04AA6D;
+            background-image: linear-gradient(to right, #134E5E 0%, #71B280  51%, #134E5E  100%);
             color: white;
             border-radius: 12px;
         }
         #removePeople{
-            background-color: #f44336;;
+            background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%);
             color: white;
             border-radius: 12px;
             margin-bottom: 5px;
@@ -45,3 +46,5 @@ form{
     width: 70%;
    }
 }
+
+

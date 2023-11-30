@@ -19,3 +19,40 @@ td{
     border: 1px solid;
     padding: 15px;
 }
+
+form{
+    border-bottom: 1px solid;
+    text-align: center;
+    
+
+    input, button{
+    font-size: 25px;
+    width: 190px;
+    border-color: #71B280;
+    }
+
+        #addStarship{
+            background-image: linear-gradient(to right, #134E5E 0%, #71B280  51%, #134E5E  100%);
+            color: white;
+            border-radius: 12px;
+        }
+        #removeStarship{
+            background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%);
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 5px;
+        }
+
+    button:active{
+        transform: scale(0.98);
+            /* Scaling button to 0.98 to its original size */
+        box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+            /* Lowering the shadow */
+    }
+    
+   input{
+    width: 70%;
+   }
+}
+
+         
