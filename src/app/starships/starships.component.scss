@@ -1,0 +1,21 @@
+ul{
+    margin: 0;
+    padding: 0;
+    li{
+        list-style: none;
+        font-size: 32px;
+        &.odd{
+            color: red;
+        }
+    }
+
+}
+
+th {
+    font-size: 36px;
+}
+
+td{
+    border: 1px solid;
+    padding: 15px;
+}

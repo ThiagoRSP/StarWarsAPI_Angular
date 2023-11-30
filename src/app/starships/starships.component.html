@@ -1,0 +1,25 @@
+
+
+<table>
+    <tr>
+      <th>Nome</th>
+      <th>Tripulantes</th>
+    </tr>
+    <tr>
+      <td><ul *ngIf="starships">
+        <li *ngFor="let starship of starships; let odd = odd"
+        [ngClass]="{odd: odd}">
+            {{starship.name}}
+    
+        </li>
+    </ul></td>
+      <td><ul *ngIf="starships">
+        <li *ngFor="let starship of starships; let odd = odd"
+        [ngClass]="{odd: odd}">
+           {{starship.crew}}
+    
+        </li>
+    </ul></td>
+
+    </tr>
+</table>

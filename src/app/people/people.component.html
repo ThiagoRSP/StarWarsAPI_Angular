@@ -1,0 +1,19 @@
+
+<form *ngIf="formPeople" [formGroup]="formPeople" (keydown.enter)="addPerson()">
+    <div>
+    <input type="text" formControlName="name"></div>
+    <button type="button" id="addPeople" (click)="addPerson()"> Adicionar <br> Pessoa</button>
+    <button type="button" id="removePeople" (click)="removePerson()"> Remover Última Pessoa</button>
+
+
+</form>
+
+
+
+<ul *ngIf="people">
+    <li *ngFor="let person of people; let odd = odd"
+    [ngClass]="{odd: odd}">
+        {{person.name}}
+
+    </li>
+</ul>

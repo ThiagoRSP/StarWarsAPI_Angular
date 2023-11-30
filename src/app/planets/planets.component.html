@@ -1,0 +1,37 @@
+
+<form *ngIf="formPlanets" [formGroup]="formPlanets" (keydown.enter)="addPlanet()">
+  <div>
+  <input type="text" placeholder="Nome do novo planeta" formControlName="name">
+  <input type="text" placeholder="População do novo planeta" formControlName="population"></div>
+  <div><button type="button" id="addPeople" (click)="addPlanet()"> Adicionar <br> Planeta</button></div>
+  <button type="button" id="removePeople" (click)="removePlanet()"> Remover Último Planeta</button>
+
+
+</form>
+
+
+<table>
+    <tr>
+      <th>Nome</th>
+      <th>População</th>
+      
+    </tr>
+    <tr>
+      <td><ul *ngIf="planets">
+        <li *ngFor="let planet of planets; let even = even"
+        [ngClass]="{even: even}">
+            {{planet.name}} 
+    
+        </li>
+    </ul></td>
+      <td><ul *ngIf="planets">
+        <li *ngFor="let planet of planets; let even = even"
+        [ngClass]="{even: even}">
+            {{planet.population === 'unknown' ? 'desconhecido' : planet.population}} 
+  
+    
+        </li>
+    </ul></td>
+     
+    </tr>
+</table>

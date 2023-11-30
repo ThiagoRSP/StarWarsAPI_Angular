@@ -1,0 +1,55 @@
+ul{
+    margin: 0;
+    padding: 0;
+    li{
+        list-style: none;
+        font-size: 32px;
+        &.even{
+            color: red;
+        }
+    }
+
+}
+
+th {
+    font-size: 36px;
+}
+
+td{
+    border: 1px solid;
+    padding: 15px;
+}
+
+form{
+    border-bottom: 1px solid;
+    text-align: center;
+    
+
+    input, button{
+    font-size: 25px;
+    width: 190px;
+    }
+
+        #addPeople{
+            background-color: #04AA6D;
+            color: white;
+            border-radius: 12px;
+        }
+        #removePeople{
+            background-color: #f44336;;
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 5px;
+        }
+
+    button:active{
+        transform: scale(0.98);
+            /* Scaling button to 0.98 to its original size */
+        box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+            /* Lowering the shadow */
+    }
+    
+   input{
+    width: 70%;
+   }
+}
